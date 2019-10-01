@@ -18,6 +18,7 @@ protocol EnumCollection : Hashable {}
 typealias StatusInvoices = (status: InvoiceStatus, invoices: [Invoice])
 typealias StatusInvoicesList = [StatusInvoices]
 
+
 enum InvoiceStatus: String, CaseIterable{
     case overdue
     case unpaid

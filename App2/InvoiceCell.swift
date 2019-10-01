@@ -17,10 +17,16 @@ struct InvoiceCell : View {
     
     var body: some View {
         return VStack{
-            Text( String(invoice.count) + " " + invoice.status.rawValue)
-                .font(.footnote)
-            Text("$" + String(invoice.total))
-                .font(.title).foregroundColor(invoice.status.textColor)
+            HStack{
+                Divider().background(invoice.status.textColor)
+                VStack(alignment: .center){
+                    Text( String(invoice.count) + " " + invoice.status.rawValue)
+                        .font(.footnote)
+                    Text("$" + String(invoice.total))
+                        .font(.title).foregroundColor(invoice.status.textColor)
+                }
+            }
         }
     }
+    
 }

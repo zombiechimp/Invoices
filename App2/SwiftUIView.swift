@@ -8,14 +8,43 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+
+struct NotificationsUIView: View {
+    @State private var customerViewedInvoice = true
+    @State private var customerPayment = true
+    @State private var overdueInvoices = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            
+            VStack{
+                
+            
+
+            Form {
+                Section {
+                    Toggle(isOn: $customerViewedInvoice) {
+                        Text("Customer viewed invoice")
+                    }
+                    Toggle(isOn: $customerPayment) {
+                        Text("Customer payment")}
+                    Toggle(isOn: $overdueInvoices) {
+                        Text("Overdue invoices")}
+                }
+                
+                
+            }
+            
+            }.navigationBarTitle(Text("Notifications"), displayMode: .inline)
+            .navigationBarItems(trailing:Button(action: {}) {Text("Done").foregroundColor(Color.purple)})
+        }
     }
 }
 
+    
+
+
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        NotificationsUIView()
     }
 }

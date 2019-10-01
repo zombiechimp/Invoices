@@ -14,27 +14,32 @@ struct ContentView: View {
     let invoiceCellData = Invoice.getInvoiceCellData(with: testData)
     var body: some View {
 
-        VStack {
-            VStack(alignment: .leading){
-                Text("All Invoices").font(.largeTitle)
+        NavigationView{
+            VStack {
+                
+                
+                NavigationView {
+                    List(invoiceCellData)  {
+                        inv in
+                        InvoiceCell(invoice: inv)
+                    }.listStyle(GroupedListStyle())
+                }.navigationBarTitle(Text("All Invoices"))
+                
+                
+                VStack(alignment: .center){
+                    Button(action: {}) {
+                        Text("New invoice")
+                        .padding()
+                            .foregroundColor(.white)
+                            .background(Color.green)
+                        
+                    }
             }
-            
-            NavigationView {
-                List(invoiceCellData) { inv in
-                    InvoiceCell(invoice: inv)
-                }
-            }.navigationBarTitle(Text("All Invoices"))
-            
-            VStack(alignment: .center){
-                Button(action: {}) {
-                    Text("New invoice")
-                    .padding()
-                        .foregroundColor(.white)
-                        .background(Color.green)
-                    
-                }
-            }
-        }
+        }.navigationBarTitle(Text("All Invoices"), displayMode: .inline)
+                .navigationBarItems(trailing:Button(action: {}) {Text("...").background(Color.blue).foregroundColor(Color.white)}.mask(Circle())
+            )
+        
+    }
     }
 }
 
