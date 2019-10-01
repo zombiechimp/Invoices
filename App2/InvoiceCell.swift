@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+struct InvoiceCell : View {
+    
+    var invoice: InvoicesWithStatus
+    
+    
+    var body: some View {
+        return VStack{
+            Text( String(invoice.count) + " " + invoice.status.rawValue)
+                .font(.footnote)
+            Text("$" + String(invoice.total))
+                .font(.title).foregroundColor(invoice.status.textColor)
+        }
+    }
+}
