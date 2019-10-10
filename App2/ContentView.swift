@@ -17,14 +17,15 @@ struct ContentView: View {
         NavigationView{
             VStack {
                 
-                
                 NavigationView {
                     List(invoiceCellData)  {
                         inv in
+                        NavigationLink(destination: InvoiceInformation(invoiceInformation: inv)){
+
                         InvoiceCell(invoice: inv)
+                        }
                     }.listStyle(GroupedListStyle())
                 }.navigationBarTitle(Text("All Invoices"))
-                
                 
                 VStack(alignment: .center){
                     Button(action: {}) {
@@ -36,7 +37,7 @@ struct ContentView: View {
                     }
             }
         }.navigationBarTitle(Text("All Invoices"), displayMode: .inline)
-                .navigationBarItems(trailing:Button(action: {}) {Text("...").background(Color.blue).foregroundColor(Color.white)}.mask(Circle())
+                .navigationBarItems(trailing:Button(action: {}) {Text("...").padding(.horizontal).background(Color.blue).foregroundColor(Color.white)}.mask(Circle())
             )
         
     }

@@ -45,6 +45,8 @@ struct InvoicesWithStatus: Identifiable{
     var status:InvoiceStatus
     var total:Double
     var count:Int
+    var invoices:[Invoice]
+
 }
 
 struct Invoice: Identifiable{
@@ -78,7 +80,7 @@ struct Invoice: Identifiable{
         
         var result:[InvoicesWithStatus] = []
         for statusInvoice in statusInvoicesList{
-            result.append(InvoicesWithStatus(status:statusInvoice.status, total: statusInvoice.invoices.reduce(0, {$0 + $1.charge}), count: statusInvoice.invoices.count))
+            result.append(InvoicesWithStatus(status:statusInvoice.status, total: statusInvoice.invoices.reduce(0, {$0 + $1.charge}), count: statusInvoice.invoices.count,invoices: statusInvoice.invoices))
         }
         
         

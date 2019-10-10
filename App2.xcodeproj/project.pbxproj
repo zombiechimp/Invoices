@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112ACCED234F63CE0003E645 /* InvoiceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112ACCEC234F63CE0003E645 /* InvoiceInformation.swift */; };
 		115A9AB32343D91700D0D011 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A9AB22343D91700D0D011 /* SwiftUIView.swift */; };
 		11859239232FD1CF009EE670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11859238232FD1CF009EE670 /* AppDelegate.swift */; };
 		1185923B232FD1CF009EE670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185923A232FD1CF009EE670 /* SceneDelegate.swift */; };
@@ -16,9 +17,11 @@
 		11859245232FD1D1009EE670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11859243232FD1D1009EE670 /* LaunchScreen.storyboard */; };
 		1185924D232FD228009EE670 /* InvoiceItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185924C232FD228009EE670 /* InvoiceItems.swift */; };
 		1185924F232FD257009EE670 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185924E232FD257009EE670 /* InvoiceCell.swift */; };
+		11C48990234F73FC00AFC82B /* InvoiceInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C4898F234F73FC00AFC82B /* InvoiceInformationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112ACCEC234F63CE0003E645 /* InvoiceInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceInformation.swift; sourceTree = "<group>"; };
 		115A9AB22343D91700D0D011 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		11859235232FD1CF009EE670 /* App2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11859238232FD1CF009EE670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		11859246232FD1D1009EE670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1185924C232FD228009EE670 /* InvoiceItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceItems.swift; sourceTree = "<group>"; };
 		1185924E232FD257009EE670 /* InvoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCell.swift; sourceTree = "<group>"; };
+		11C4898F234F73FC00AFC82B /* InvoiceInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceInformationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				11859246232FD1D1009EE670 /* Info.plist */,
 				1185924C232FD228009EE670 /* InvoiceItems.swift */,
 				11859240232FD1D1009EE670 /* Preview Content */,
+				112ACCEC234F63CE0003E645 /* InvoiceInformation.swift */,
+				11C4898F234F73FC00AFC82B /* InvoiceInformationCell.swift */,
 			);
 			path = App2;
 			sourceTree = "<group>";
@@ -157,7 +163,9 @@
 			files = (
 				1185924D232FD228009EE670 /* InvoiceItems.swift in Sources */,
 				1185924F232FD257009EE670 /* InvoiceCell.swift in Sources */,
+				11C48990234F73FC00AFC82B /* InvoiceInformationCell.swift in Sources */,
 				115A9AB32343D91700D0D011 /* SwiftUIView.swift in Sources */,
+				112ACCED234F63CE0003E645 /* InvoiceInformation.swift in Sources */,
 				11859239232FD1CF009EE670 /* AppDelegate.swift in Sources */,
 				1185923B232FD1CF009EE670 /* SceneDelegate.swift in Sources */,
 				1185923D232FD1CF009EE670 /* ContentView.swift in Sources */,
