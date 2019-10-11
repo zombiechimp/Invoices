@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6FB3F314-33AD-45A9-8AEC-F6833E176A59"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D682A35B-0FA0-43A2-A464-E5EEEAC61424"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App2/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D682A35B-0FA0-43A2-A464-E5EEEAC61424 - 5a45ef51dce04253"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (App2.InvoicesWithStatus) -&gt; SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;App2.InvoicesWithStatus&gt;, Foundation.UUID, SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt;&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;App2.InvoicesWithStatus&gt;, Foundation.UUID, SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(SwiftUI.Text) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.background&lt;A where A1: SwiftUI.View&gt;(_: A1, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarItems&lt;A where A1: SwiftUI.View&gt;(trailing: A1) -&gt; some&gt;&gt;.0 in App2.ContentView.body.getter : some"
+                  moduleName = "App2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teajakic/Library/Mobile%20Documents/com~apple~CloudDocs/developer/App2/App2/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D682A35B-0FA0-43A2-A464-E5EEEAC61424 - f07b34508ee1d5a0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt; in closure #1 (App2.InvoicesWithStatus) -&gt; SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;App2.InvoicesWithStatus&gt;, Foundation.UUID, SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt;&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;App2.InvoicesWithStatus&gt;, Foundation.UUID, SwiftUI.Section&lt;App2.Header, SwiftUI.NavigationLink&lt;App2.InvoiceCell, App2.InvoiceInformation&gt;, App2.Footer&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(SwiftUI.Text) -&gt; some&gt;&gt;.0, SwiftUI.VStack&lt;SwiftUI.Button&lt;&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.background&lt;A where A1: SwiftUI.View&gt;(_: A1, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarItems&lt;A where A1: SwiftUI.View&gt;(trailing: A1) -&gt; some&gt;&gt;.0 in App2.ContentView.body.getter : some"
+                  moduleName = "App2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teajakic/Library/Mobile%20Documents/com~apple~CloudDocs/developer/App2/App2/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "129">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

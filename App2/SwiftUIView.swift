@@ -13,6 +13,12 @@ struct NotificationsUIView: View {
     @State private var customerViewedInvoice = true
     @State private var customerPayment = true
     @State private var overdueInvoices = true
+//    @EnvironmentObject var model: Model
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
+    
+//    var onDismiss: () -> Void
+    
     var body: some View {
         NavigationView{
             
@@ -35,10 +41,21 @@ struct NotificationsUIView: View {
             }
             
             }.navigationBarTitle(Text("Notifications"), displayMode: .inline)
-            .navigationBarItems(trailing:Button(action: {}) {Text("Done").foregroundColor(Color.purple)})
-        }
+                .navigationBarItems(trailing:Button(action: {
+//                    self.model.pushed = false
+                    self.mode.wrappedValue.dismiss()
+                    
+                }){
+                    Text("Done").foregroundColor(Color.purple)
+                    
+                })
+            
+
+            
+        }.navigationBarBackButtonHidden(true)
     }
 }
+
 
     
 

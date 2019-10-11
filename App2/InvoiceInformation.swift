@@ -14,12 +14,12 @@ struct InvoiceInformation: View {
         NavigationView{
             NavigationView{
                 
-                    List(invoiceInformation.invoices){inv in
-                        InvoiceInformationCell(invoice: inv)
-                    }
+                List(invoiceInformation.invoices){inv in
+                    InvoiceInformationCell(invoice: inv)
+                }
             }.navigationBarTitle(Text(invoiceInformation.status.rawValue.capitalizingFirstLetter() + "  invoices").foregroundColor(invoiceInformation.status.textColor), displayMode: .inline)
-        
-    }
+            
+        }
     }
 }
 

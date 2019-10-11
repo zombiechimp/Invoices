@@ -10,39 +10,49 @@ import SwiftUI
 
 struct ContentView: View {
     let invoices: [Invoice] = testData
-
+    @EnvironmentObject var model: Model
+    
     let invoiceCellData = Invoice.getInvoiceCellData(with: testData)
     var body: some View {
-
+        
         NavigationView{
             VStack {
                 
                 NavigationView {
-                    List(invoiceCellData)  {
-                        inv in
-                        NavigationLink(destination: InvoiceInformation(invoiceInformation: inv)){
-
-                        InvoiceCell(invoice: inv)
+                    List{
+                        Section(header:Header(), footer:Footer()){
+                            ForEach(invoiceCellData)  {
+                                inv in
+                                
+                                NavigationLink(destination: InvoiceInformation(invoiceInformation: inv)){
+                                    
+                                    InvoiceCell(invoice: inv)
+                                    
+                                }
+                                
+                            }
                         }
-                    }.listStyle(GroupedListStyle())
+                    }
                 }.navigationBarTitle(Text("All Invoices"))
                 
                 VStack(alignment: .center){
                     Button(action: {}) {
                         Text("New invoice")
-                        .padding()
+                            .padding()
                             .foregroundColor(.white)
                             .background(Color.green)
                         
                     }
-            }
-        }.navigationBarTitle(Text("All Invoices"), displayMode: .inline)
-                .navigationBarItems(trailing:Button(action: {}) {Text("...").padding(.horizontal).background(Color.blue).foregroundColor(Color.white)}.mask(Circle())
+                }
+            }.navigationBarTitle(Text("All Invoices"), displayMode: .inline)
+                .navigationBarItems(trailing:NavigationLink(destination: NotificationsUIView()) {Image(systemName: "ellipsis") .padding(5).background(Color.blue).foregroundColor(Color.white) }.mask(Circle())
             )
-        
-    }
+            
+        }
     }
 }
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -50,3 +60,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

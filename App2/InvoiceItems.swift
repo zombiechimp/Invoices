@@ -18,6 +18,20 @@ protocol EnumCollection : Hashable {}
 typealias StatusInvoices = (status: InvoiceStatus, invoices: [Invoice])
 typealias StatusInvoicesList = [StatusInvoices]
 
+struct Footer: View {
+    var body: some View {
+        Rectangle()
+            .foregroundColor(.white)
+            .listRowInsets(EdgeInsets())
+    }
+}
+struct Header: View {
+    var body: some View {
+        Rectangle()
+            .foregroundColor(.white)
+            .listRowInsets(EdgeInsets())
+    }
+}
 
 enum InvoiceStatus: String, CaseIterable{
     case overdue
@@ -101,4 +115,7 @@ let testData: [Invoice] = [
     Invoice(status: .notSent, charge:756.31)
 ]
 
+class Model: ObservableObject {
+    @Published var pushed = false
+}
 
